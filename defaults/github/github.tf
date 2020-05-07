@@ -2,11 +2,12 @@ provider "github" {
   version = "~> 2.7"
 
   organization = "DataBiosphere"
-  token = ""
+  token        = ""
 }
 
 module "repository" {
-  source = "innovationnorway/repository/github"
+  source  = "innovationnorway/repository/github"
+  version = "~> 2.1"
 
   name           = var.repo_name
   description    = var.repo_description

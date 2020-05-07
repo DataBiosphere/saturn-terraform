@@ -44,8 +44,10 @@ resource "google_project_iam_member" "ci_sa_iam" {
 
 module "project-iam-bindings" {
   source  = "terraform-google-modules/iam/google//modules/projects_iam"
-  project = var.google_project
-  mode    = "additive"
+  version = "~> 6.1"
+
+  projects = [var.google_project]
+  mode     = "additive"
 
   bindings = {
     "roles/owner" = var.requires_suitable ? [] : ["group:saturn-dev@broadinstitute.org"]
