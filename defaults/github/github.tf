@@ -22,7 +22,7 @@ module "repository" {
 
     enforce_admins         = true
     required_status_checks = {
-      contexts = var.required_status_checks
+      contexts = var.require_circle_build_for_merge ? ["ci/circleci: build"] : []
     }
   }]
 
@@ -30,7 +30,7 @@ module "repository" {
   has_projects = false
 
   teams = [{
-    name       = "terra-devs"
+    name       = var.codeowner_team
     permission = "push"
   }]
 }

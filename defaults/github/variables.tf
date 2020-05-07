@@ -6,7 +6,12 @@ variable "repo_description" {
   type = string
 }
 
-variable "required_status_checks" {
-  type    = list(string)
-  default = []
+variable "require_circle_build_for_merge" {
+  type    = bool
+  default = false
+}
+
+variable "codeowner_team" {
+  type    = string
+  default = "terra-devs"
 }
