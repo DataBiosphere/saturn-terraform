@@ -12,7 +12,7 @@ locals {
 
 # billing account?
 provider "google" {
-  version = "~> 3.11"
+  version = "~> 3.20"
 
   project = var.google_project
   region  = "us-central"

@@ -2,7 +2,7 @@ module "bard-repo" {
   source = "./defaults/github"
 
   repo_name        = "bard"
-  repo_description = ""
+  repo_description = "Metrics collection service"
 }
 
 module "bard-dev" {
@@ -31,4 +31,11 @@ module "bard-staging" {
 
   google_project    = "terra-bard-staging"
   requires_suitable = false
+}
+
+module "bard-prod" {
+  source = "./defaults/gcp"
+
+  google_project    = "terra-bard-prod"
+  requires_suitable = true
 }

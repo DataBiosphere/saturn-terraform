@@ -2,7 +2,7 @@ module "lyle-repo" {
   source = "./defaults/github"
 
   repo_name        = "lyle"
-  repo_description = ""
+  repo_description = "Test user allocation service"
 }
 
 module "lyle-service" {

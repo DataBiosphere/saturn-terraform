@@ -1,5 +1,5 @@
 provider "github" {
-  version = "~> 2.4.1"
+  version = "~> 2.7"
 
   organization = "DataBiosphere"
   token = ""

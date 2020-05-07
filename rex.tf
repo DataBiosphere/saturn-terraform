@@ -2,7 +2,7 @@ module "rex-repo" {
   source = "./defaults/github"
 
   repo_name        = "rex"
-  repo_description = ""
+  repo_description = "Survey response service"
 }
 
 module "rex-dev" {

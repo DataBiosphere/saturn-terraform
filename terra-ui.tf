@@ -2,7 +2,7 @@ module "terra-ui-repo" {
   source = "./defaults/github"
 
   repo_name        = "terra-ui"
-  repo_description = ""
+  repo_description = "Web user interface for the Terra platform"
 }
 
 module "terra-ui-dev" {
