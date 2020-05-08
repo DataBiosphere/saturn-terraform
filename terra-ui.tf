@@ -1,9 +1,8 @@
 module "terra-ui-repo" {
   source = "./defaults/github"
 
-  repo_name                      = "terra-ui"
-  repo_description               = "Web user interface for the Terra platform"
-  require_circle_build_for_merge = true
+  repo_name        = "terra-ui"
+  repo_description = "Web user interface for the Terra platform"
 }
 
 module "terra-ui-dev" {

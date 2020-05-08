@@ -8,7 +8,7 @@ variable "repo_description" {
 
 variable "require_circle_build_for_merge" {
   type    = bool
-  default = false
+  default = true
 }
 
 variable "codeowner_team" {

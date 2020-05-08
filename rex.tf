@@ -3,7 +3,6 @@ module "rex-repo" {
 
   repo_name                      = "rex"
   repo_description               = "Survey response service"
-  require_circle_build_for_merge = true
 }
 
 module "rex-dev" {

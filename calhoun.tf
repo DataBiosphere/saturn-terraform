@@ -1,8 +1,9 @@
 module "calhoun-repo" {
   source = "./defaults/github"
 
-  repo_name        = "calhoun"
-  repo_description = "Notebook preview service"
+  repo_name                      = "calhoun"
+  repo_description               = "Notebook preview service"
+  require_circle_build_for_merge = false
 }
 
 module "calhoun-dev" {

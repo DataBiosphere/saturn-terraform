@@ -3,7 +3,6 @@ module "lyle-repo" {
 
   repo_name                      = "lyle"
   repo_description               = "Test user allocation service"
-  require_circle_build_for_merge = true
 }
 
 module "lyle-service" {
