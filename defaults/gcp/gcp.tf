@@ -10,14 +10,13 @@ locals {
 
 ##### SETUP
 
-# billing account?
 provider "google" {
   version = "~> 3.20"
 
   project = var.google_project
   region  = "us-central"
 
-  credentials = file("${var.google_project}-key.json")
+  credentials = var.google_credentials
 }
 
 ##### ENABLE APIS

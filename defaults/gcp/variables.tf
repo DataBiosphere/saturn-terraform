@@ -5,3 +5,7 @@ variable "google_project" {
 variable "requires_suitable" {
   type = bool
 }
+
+variable "google_credentials" {
+  type = string
+}
