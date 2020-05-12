@@ -1,5 +1,6 @@
 module "terra-ui-repo" {
-  source = "./defaults/github"
+  source       = "./defaults/github"
+  github_token = var.github_token
 
   repo_name        = "terra-ui"
   repo_description = "Web user interface for the Terra platform"

@@ -1,5 +1,6 @@
 module "calhoun-repo" {
-  source = "./defaults/github"
+  source       = "./defaults/github"
+  github_token = var.github_token
 
   repo_name                      = "calhoun"
   repo_description               = "Notebook preview service"

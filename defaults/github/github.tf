@@ -2,7 +2,7 @@ provider "github" {
   version = "~> 2.7"
 
   organization = "DataBiosphere"
-  token        = ""
+  token        = var.github_token
 }
 
 module "repository" {

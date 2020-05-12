@@ -15,3 +15,7 @@ variable "codeowner_team" {
   type    = string
   default = "terra-devs"
 }
+
+variable "github_token" {
+  type = string
+}

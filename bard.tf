@@ -1,5 +1,6 @@
 module "bard-repo" {
-  source = "./defaults/github"
+  source       = "./defaults/github"
+  github_token = var.github_token
 
   repo_name        = "bard"
   repo_description = "Metrics collection service"
