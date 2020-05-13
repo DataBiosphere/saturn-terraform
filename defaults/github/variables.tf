@@ -11,6 +11,11 @@ variable "require_circle_build_for_merge" {
   default = true
 }
 
+variable "has_wiki" {
+  type    = bool
+  default = false
+}
+
 variable "codeowner_team" {
   type    = string
   default = "terra-devs"

@@ -4,6 +4,7 @@ module "terra-ui-repo" {
 
   repo_name        = "terra-ui"
   repo_description = "Web user interface for the Terra platform"
+  has_wiki         = true
 }
 
 module "terra-ui-dev" {
