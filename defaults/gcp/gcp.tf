@@ -29,7 +29,7 @@ resource "google_project_service" "iam_api" {
 
 resource "google_service_account" "circleci" {
   account_id   = "circleci"
-  display_name = "CircleCi"
+  display_name = "CircleCI"
 }
 
 ##### ROLE ASSIGNMENTS
