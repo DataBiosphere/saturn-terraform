@@ -18,7 +18,7 @@ variable "has_wiki" {
 
 variable "codeowner_team" {
   type    = string
-  default = "terra-devs"
+  default = "terra-ui-pr-approvers"
 }
 
 variable "github_token" {
